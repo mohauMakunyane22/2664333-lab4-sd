@@ -44,8 +44,11 @@ async function fetchCountryInfo() {
                 const li = document.createElement("li");
                 const flag = document.createElement("img");
                 flag.src = borderCountry.flags?.png || borderCountry.flags?.svg || "";
-                flag.width = 45;
-                flag.height = 45;
+                flag.style.width = "80px"; // Adjust the size as needed
+flag.style.height = "auto"; // Keep aspect ratio
+flag.style.border = "1px solid #ccc"; // Optional: Add a border for better visibility
+flag.style.padding = "5px"; // Optional: Add padding for spacing
+
 
                 const countryName = document.createElement("span");
                 countryName.textContent = borderCountry.name.common;
