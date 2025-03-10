@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Get Country Information</h1>
+    </header>
+
+    <main>
+        <section>
+                <label for="country-input">Enter a country name:</label>
+                <input type="text" id="country-input" >
+                <button id="fetch-button">Fetch Country Info</button>
+        </section>
+
+        <section id="country-info" hidden>
+            <h2>Country Information</h2>
+            <p><strong>Capital:</strong> <span id="capital"></span></p>
+            <p><strong>Population:</strong> <span id="population"></span></p>
+            <p><strong>Region:</strong> <span id="region"></span></p>
+            <p><strong>Flag:</strong><span id="flag-label"></span></p>
+            <figure>
+                <img id="flag" src="" alt="Flag of the country">
+            </figure>
+        </section>
+
+        <section id="bordering-countries" hidden>
+            <h2>Bordering Countries: </h2>
+            <ul id="border-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
